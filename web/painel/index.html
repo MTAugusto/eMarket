@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>eMarket - Admin</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="msapplication-tap-highlight" content="no" />		
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+		<link rel="stylesheet" href="../bower_components/angular-material/angular-material.css"/>
+		<link rel="stylesheet" href="css/styles.css"/>
+		<link rel="stylesheet" href="../bower_components/md-data-table/dist/md-data-table-style.css">
+
+	</head>
+
+  	<body ng-app="spa" ng-controller="mainCtrl" ng-init="verificarLogin()">	
+  		<div id="app">
+			<div ng-controller="SlidenavCtrl">
+			   	<section>
+			    	<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">	        
+				        <div >
+				        	<div ng-include="'includes/menu.html'"></div>
+				      	</div>
+			    	</md-sidenav>
+			    	<div class="slidenav"></div>
+			    	<div layout="column" ng-view></div>		
+			    </section>
+			</div>
+		</div>
+
+
+
+		<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="../bower_components/angular/angular.js"></script>
+		<script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+		<script src="../bower_components/angular-animate/angular-animate.js"></script>
+		<script src="../bower_components/angular-aria/angular-aria.js"></script>
+		<script src="../bower_components/angular-material/angular-material.js"></script>
+		<script src='../bower_components/underscore/underscore-min.js'></script>
+		<script src="../bower_components/angular-material-icons/angular-material-icons.js"></script>
+		<script src="../bower_components/lodash/lodash.min.js"></script>
+		<script src="../bower_components/md-data-table/dist/md-data-table-templates.js"></script>
+		<script src="../bower_components/md-data-table/dist/md-data-table.js"></script>
+		<script src="../bower_components/angular-route/angular-route.min.js"></script>
+		<script src="../bower_components/angular-messages/angular-messages.min.js"></script>
+		<script src="../bower_components/angular-input-masks/angular-input-masks-standalone.min.js"></script>
+		<script src="./js/assets-cache.js"></script>
+		<!-- includes das tabelas -->
+		
+		
+		
+		
+		
+		
+
+
+		
+		
+		
+		
+		<script src="./js/main.js"></script>	
+			<script src="./js/leftSlidenavCtrl.js"></script>
+			<script src="./js/slidenavCtrl.js"></script>
+			<script src="./js/menuItemsCtrl.js"></script>
+		<script src="./js/homeCtrl.js"></script>
+		<script src="./js/configurationCtrl.js"></script>
+		<script src="./js/administracaoCtrl.js"></script>
+			<script src="./js/adminEmpresaCtrl.js"></script>
+			<script src="./js/adminFuncionariosCtrl.js"></script>
+			<script src="./js/adminFuncionariosInserirCtrl.js"></script>
+			<script src="./js/adminFuncionariosInserirContatosCtrl.js"></script>
+			<script src="./js/adminFuncionariosEditarCtrl.js"></script>
+			<script src="./js/adminUsuariosCtrl.js"></script>
+			<script src="./js/adminUsuariosInserirCtrl.js"></script>
+			<script src="./js/adminUsuariosEditarCtrl.js"></script>
+			<script src="./js/adminCargosCtrl.js"></script>
+			<script src="./js/adminCargosInserirCtrl.js"></script>
+			<script src="./js/adminCargosEditarCtrl.js"></script>
+			<script src="./js/adminPermissoesCtrl.js"></script>
+			<script src="./js/adminPermissoesInserirCtrl.js"></script>
+			<script src="./js/adminPermissoesEditarCtrl.js"></script>
+			<script src="./js/adminRelatorioAcessoCtrl.js"></script>
+			<script src="./js/adminRelatorioFuncionariosCtrl.js"></script>
+		<script src="./js/estoqueCtrl.js"></script>
+			<script src="./js/estoqAtualCtrl.js"></script>
+			<script src="./js/estoqComprasCtrl.js"></script>
+			<script src="./js/estoqProdutosCtrl.js"></script>
+			<script src="./js/estoqProdutosInserirCtrl.js"></script>
+			<script src="./js/estoqProdutosEditarCtrl.js"></script>
+			<script src="./js/estoqFornecedoresCtrl.js"></script>
+			<script src="./js/estoqFornecedoresInserirCtrl.js"></script>
+			<script src="./js/estoqFornecedoresInserirContatoCtrl.js"></script>
+			<script src="./js/estoqFornecedoresEditarCtrl.js"></script>
+			<script src="./js/estoqRelComprasEditarCtrl.js"></script>
+			<script src="./js/estoqRelIntensCompraCtrl.js"></script>
+			<script src="./js/estoqRelEstoqueCtrl.js"></script>
+			<script src="./js/estoqRelEstoqueMinimoCtrl.js"></script>
+		<script src="./js/financeiroCtrl.js"></script>
+			<script src="./js/finanContasPagarCtrl.js"></script>
+			<script src="./js/finanContasReceberCtrl.js"></script>
+			<script src="./js/finanFormasPagamentoCtrl.js"></script>
+			<script src="./js/finanFormasPagamentoInserirCtrl.js"></script>
+			<script src="./js/finanFormasPagamentoEditarCtrl.js"></script>
+			<script src="./js/finanRelMovimentacaoCtrl.js"></script>
+			<script src="./js/finanRelContasPagarCtrl.js"></script>
+			<script src="./js/finanRelContasReceberCtrl.js"></script>
+		<script src="./js/vendasCtrl.js"></script>
+			<script src="./js/vendResumoPdvCtrl.js"></script>
+			<script src="./js/vendClientesCtrl.js"></script>
+			<script src="./js/vendClientesInserirCtrl.js"></script>
+			<script src="./js/vendClientesInserirContatosCtrl.js"></script>
+			<script src="./js/vendClientesEditarCtrl.js"></script>
+			<script src="./js/vendPromocoesCtrl.js"></script>
+			<script src="./js/vendPromocoesInserirCtrl.js"></script>
+			<script src="./js/vendPromocoesEditarCtrl.js"></script>
+			<script src="./js/vendProdutosCtrl.js"></script>
+			<script src="./js/vendProdutosInserirCtrl.js"></script>
+			<script src="./js/vendProdutosEditarCtrl.js"></script>
+			<script src="./js/vendPdvsCtrl.js"></script>
+			<script src="./js/vendPdvsInserirCtrl.js"></script>
+			<script src="./js/vendRelVendasCtrl.js"></script>
+			<script src="./js/vendRelProdutosCtrl.js"></script>
+			<script src="./js/vendRelItensVendaCtrl.js"></script>
+			<script src="./js/vendRelMovimentacaoCtrl.js"></script>
+		<script src="./js/modeloCtrl.js"></script> <!-- APAGAR DEPOIS -->
+	</body>
+</html>
